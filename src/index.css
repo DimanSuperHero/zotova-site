@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-bg text-ink font-sans;
+    background-image: radial-gradient(rgba(245, 235, 230, 0.04) 1px, transparent 1px);
+    background-size: 4px 4px;
+    margin: 0;
+  }
+  html { scroll-behavior: smooth; }
+}
+
+@layer components {
+  .serif { font-family: 'Cormorant Garamond', serif; letter-spacing: -0.01em; font-weight: 500; }
+  .italic-serif { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 400; }
+  .card { background: rgba(245, 235, 230, .04); border: 1px solid rgba(245, 235, 230, .1); transition: all .4s; }
+  .card:hover { border-color: #e8b4b8; transform: translateY(-2px); }
+  .chip { background: rgba(232, 180, 184, .1); color: #e8b4b8; border: 1px solid rgba(232, 180, 184, .3); }
+  .glow { box-shadow: 0 12px 50px rgba(232, 180, 184, .25); }
+}
