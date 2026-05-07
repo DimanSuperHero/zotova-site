@@ -10,3 +10,4 @@
 
 ## 2026-05-08
 - 🏗 Спица оформлена: создана локальная `CLAUDE.md` и этот лог. Дальнейшие события пишу сюда. 💾
+- 🚀 Деплой на Cloudflare Pages: создан standalone GitHub-репо `DimanSuperHero/zotova-site`, настроен авто-деплой при push в `main`. Live: https://zotova-site.pages.dev — все 7 маршрутов отдают 200 OK. 💾
