@@ -10,8 +10,9 @@
     background-image: radial-gradient(rgba(245, 235, 230, 0.04) 1px, transparent 1px);
     background-size: 4px 4px;
     margin: 0;
+    overflow-x: hidden;
   }
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; overflow-x: hidden; }
 }
 
 @layer components {

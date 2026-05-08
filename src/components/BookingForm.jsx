@@ -12,18 +12,18 @@ export default function BookingForm({ defaultTechnique }) {
   }
 
   return (
-    <section id="booking" className="max-w-7xl mx-auto px-6 py-20">
-      <div className="rounded-[2rem] p-16 relative overflow-hidden text-bg" style={{ background: 'linear-gradient(135deg,#e8b4b8,#d4a574)' }}>
-        <div className="grid md:grid-cols-12 gap-10 relative">
+    <section id="booking" className="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
+      <div className="rounded-[2rem] p-6 sm:p-10 md:p-16 relative overflow-hidden text-bg" style={{ background: 'linear-gradient(135deg,#e8b4b8,#d4a574)' }}>
+        <div className="grid md:grid-cols-12 gap-8 md:gap-10 relative">
           <div className="md:col-span-7">
-            <h2 className="serif text-7xl leading-[0.95] text-bg">
+            <h2 className="serif text-5xl sm:text-6xl md:text-7xl leading-[1.0] text-bg break-words">
               Запишитесь<br />на <em className="italic-serif">первый</em> сеанс.
             </h2>
-            <p className="mt-6 text-black/70 max-w-md">
+            <p className="mt-5 sm:mt-6 text-black/70 max-w-md">
               Выберите технику и удобное время. В течение часа я перезвоню, чтобы уточнить детали и подобрать идеальный для вас формат.
             </p>
-            <div className="mt-8 space-y-2 text-black/80">
-              <div className="flex gap-3"><span className="serif font-bold">→</span> Студия: {studio.address}</div>
+            <div className="mt-6 sm:mt-8 space-y-2 text-black/80 text-sm sm:text-base">
+              <div className="flex gap-3"><span className="serif font-bold">→</span> <span className="break-words">Студия: {studio.address}</span></div>
               <div className="flex gap-3"><span className="serif font-bold">→</span> {studio.hours}</div>
               <div className="flex gap-3"><span className="serif font-bold">→</span> Парковка во дворе</div>
             </div>
@@ -36,7 +36,7 @@ export default function BookingForm({ defaultTechnique }) {
                 <button onClick={() => setSent(false)} className="mt-6 text-xs text-white/50 underline">отправить ещё одну заявку</button>
               </div>
             ) : (
-              <form onSubmit={submit} className="rounded-2xl p-6 space-y-3 bg-bg text-ink">
+              <form onSubmit={submit} className="rounded-2xl p-5 sm:p-6 space-y-3 bg-bg text-ink">
                 <input
                   required
                   type="text"

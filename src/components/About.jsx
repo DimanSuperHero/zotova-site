@@ -1,6 +1,6 @@
 export default function About({ compact = false }) {
   return (
-    <section id="about" className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-12 gap-12">
+    <section id="about" className="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-20 grid md:grid-cols-12 gap-8 md:gap-12">
       <div className="md:col-span-5">
         <div className="rounded-3xl overflow-hidden aspect-[4/5] card">
           <img src="/assets/anna-portrait.jpg" alt="Анна Зотова" className="w-full h-full object-cover" />
@@ -8,8 +8,8 @@ export default function About({ compact = false }) {
       </div>
       <div className="md:col-span-7 flex flex-col justify-center">
         <span className="chip text-xs px-3 py-1 rounded-full uppercase tracking-[0.2em] self-start">Знакомство</span>
-        <h2 className="serif text-6xl mt-6">Анна Зотова</h2>
-        <p className="italic-serif text-2xl mt-3 text-accent">мастер прикосновения · автор техники «Тёплый шёлк»</p>
+        <h2 className="serif text-5xl sm:text-6xl mt-6">Анна Зотова</h2>
+        <p className="italic-serif text-xl sm:text-2xl mt-3 text-accent">мастер прикосновения · автор техники «Тёплый шёлк»</p>
         <div className="mt-8 space-y-5 text-white/70 leading-relaxed">
           <p>Я пришла в массаж после восьми лет в IT-менеджменте. Однажды я просто перестала чувствовать своё тело — и поняла, что таких людей вокруг тысячи. Мы научились отлично работать руками за компьютером и совсем разучились слышать себя.</p>
           <p>За девять лет практики я училась у российских и тайских мастеров, прошла подготовку по слинг-терапии и работе с фасциями. Но главное, что я нашла — это <em className="italic-serif text-accent">свой темп</em>. Мой массаж — медленный. Я не разминаю мышцы, я разговариваю с ними прикосновением.</p>

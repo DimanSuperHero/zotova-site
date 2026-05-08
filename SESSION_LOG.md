@@ -11,3 +11,4 @@
 ## 2026-05-08
 - 🏗 Спица оформлена: создана локальная `CLAUDE.md` и этот лог. Дальнейшие события пишу сюда. 💾
 - 🚀 Деплой на Cloudflare Pages: создан standalone GitHub-репо `DimanSuperHero/zotova-site`, настроен авто-деплой при push в `main`. Live: https://zotova-site.pages.dev — все 7 маршрутов отдают 200 OK. 💾
+- 🐞 Фикс мобилки + навигация: верхнее меню переведено на якоря лендинга (`/#about`, `/#techniques`, `/#faq`, `/#booking`), «Отзывы» и «Контакты» — отдельные страницы. Добавлен `ScrollToTop` (сброс скролла + smooth scroll к hash). Hero/About/TechniquesGrid/Reviews/FAQ/BookingForm/Footer/Header переадаптированы под мобилку (px-4 sm:px-6, адаптивная типографика, кнопки в колонку, overflow-x:hidden на html/body). Build OK. 💾
